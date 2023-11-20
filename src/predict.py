@@ -36,7 +36,7 @@ while True:
         print(f"Your car's mileage is {mileage} km.")
         break
 
-# Predict the price of the car
+# Predict the price of the car.
 predicted_price = mod.model(theta0, theta1, mileage)
 if predicted_price < 0:
     predicted_price = 0
