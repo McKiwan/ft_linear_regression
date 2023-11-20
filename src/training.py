@@ -35,26 +35,24 @@ km = df["km"].values
 price = df["price"].values
 
 # Plot the data.
-# fig, ax = plt.subplots()
-# ax.scatter(km, price)
-# ax.set_xlabel("Mileage(km)")
-# ax.set_ylabel("Price")
-# ax.set_title("Scatter plot of the data")
-# plt.savefig("../images/Scatter plot of the data.png")
-# plt.show()
+fig, ax = plt.subplots()
+ax.scatter(km, price)
+ax.set_xlabel("Mileage(km)")
+ax.set_ylabel("Price")
+ax.set_title("Scatter plot of the data")
+plt.show()
 
 # Features normalization is a technique used to normalize the range of independent variables or features of data.
 # Normalization prevents overflows in the gradient descent algorithm.
 km_normalized = (km - np.mean(km)) / np.std(km)
 
 # Plot of the normalized data.
-# fig, ax = plt.subplots()
-# ax.scatter(km_normalized, price)
-# ax.set_xlabel("Mileage(km)")
-# ax.set_ylabel("Price")
-# ax.set_title("Scatter plot of the normalized data")
-# plt.savefig("../images/Scatter plot of the normalized data.png")
-# plt.show()
+fig, ax = plt.subplots()
+ax.scatter(km_normalized, price)
+ax.set_xlabel("Mileage(km)")
+ax.set_ylabel("Price")
+ax.set_title("Scatter plot of the normalized data")
+plt.show()
 
 # Initialize the parameters.
 # Leaning rate is adjusting the speed of the gradient descent.
@@ -68,15 +66,14 @@ num_iterations = 2000
 costs = []
 
 # Plot the data and model before training.
-# fig, ax = plt.subplots()
-# ax.scatter(km, price, label="Data")
-# ax.plot(km, mod.model(theta0, theta1, km), color="red", label="Model")
-# ax.set_xlabel("Mileage(km)")
-# ax.set_ylabel("Price")
-# ax.legend()
-# ax.set_title("Linear Regression before training")
-# plt.savefig("../images/Linear Regression before training.png")
-# plt.show()
+fig, ax = plt.subplots()
+ax.scatter(km, price, label="Data")
+ax.plot(km, mod.model(theta0, theta1, km), color="red", label="Model")
+ax.set_xlabel("Mileage(km)")
+ax.set_ylabel("Price")
+ax.legend()
+ax.set_title("Linear Regression before training")
+plt.show()
 
 # Train the model with gradient descent.
 for iteration in range(num_iterations):
@@ -108,24 +105,22 @@ pd.DataFrame({"theta0": [theta0], "theta1": [theta1]}).to_csv(
     "../data/parameters.csv", index=False
 )
 # Plot the data and the model after training.
-# fig, ax = plt.subplots()
-# ax.scatter(km, price, label="Data")
-# ax.plot(km, mod.model(theta0, theta1, km), color="red", label="Model")
-# ax.set_xlabel("Mileage(km)")
-# ax.set_ylabel("Price")
-# ax.legend()
-# ax.set_title("Linear Regression after training")
-# plt.savefig("../images/Linear Regression after training.png")
-# plt.show()
+fig, ax = plt.subplots()
+ax.scatter(km, price, label="Data")
+ax.plot(km, mod.model(theta0, theta1, km), color="red", label="Model")
+ax.set_xlabel("Mileage(km)")
+ax.set_ylabel("Price")
+ax.legend()
+ax.set_title("Linear Regression after training")
+plt.show()
 
 # Plot the cost.
-# fig, ax = plt.subplots()
-# ax.plot(costs)
-# ax.set_xlabel("Iteration")
-# ax.set_ylabel("Cost")
-# ax.set_title("Cost function")
-# plt.savefig("../images/cost.png")
-# plt.show()
+fig, ax = plt.subplots()
+ax.plot(costs)
+ax.set_xlabel("Iteration")
+ax.set_ylabel("Cost")
+ax.set_title("Cost function")
+plt.show()
 
 # ANIMATION PART
 # Create a figure and axis for the animation.
