@@ -125,28 +125,27 @@ plt.show()
 # ANIMATION PART
 # Create a figure and axis for the animation.
 fig, ax = plt.subplots()
-# ax.axis([np.min(km) * 0.75, 250000, np.min(price) * 0.75, 9000])
+# ax.axis([np.min(km) * 0.75, np.max(km) * 1.15, np.min(price) * 0.75, np.max(price) * 1.15)])
 ax.axis([0, 250000, -400, 9000])
 ax.set_xlabel("Mileage(km)")
 ax.set_ylabel("Price")
 ax.set_title("Linear Regression Animation")
 
-# Create an empty scatter plot for the data points.
-scatter = ax.scatter(km, price, label="Data")
+# Create scatter plot for the data points, this don't need to be updated.
+ax.scatter(km, price, label="Data")
 
-# Create an empty line plot for the model.
-(line,) = ax.plot(km, mod.model(0, 0, km), "r", label="Model")
+# Create initial line plot for the model at theta0 = 0 & theta 1 = 0.
+theta0 = 0.0
+theta1 = 0.0
+(line,) = ax.plot(km, mod.model(theta0, theta1, km), "r", label="Model")
 
-# Create an empty text for displaying the iteration and cost.
+# Create initial text for displaying the iteration and cost.
 text = ax.text(
     0.02,
     0.95,
-    f"Iteration: 0, Cost: {mod.cost_function(km_normalized, price, 0, 0):.2f}",
+    f"Iteration: 0, Cost: {mod.cost_function(km_normalized, price, theta0, theta1):.2f}",
     transform=ax.transAxes,
 )
-
-theta0 = 0.0
-theta1 = 0.0
 
 
 # Update function for the animation.
