@@ -1,9 +1,19 @@
+<!-- Back to top link -->
 <a name="readme-top"></a>
 
 <p align="center">
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Language-Python-blue?style=for-the-badge&logo=python&logoColor=white" /></a>
   <a href="https://github.com/McKiwan/ft_linear_regression/commits/main"><img src="https://img.shields.io/github/last-commit/McKiwan/ft_linear_regression?style=for-the-badge&logo=github" /></a>
 </p>
+
+<!-- Images -->
+<div align="center">
+  <a>
+    <img src="images/Linear Regression before training.png" alt="Before Training" style="width: 500px"/>
+    <img src="images/Linear Regression after training.png" alt="After Training" style="width: 500px"/>
+  </a>
+</div>
+
 
 # ft_linear_regression
 
