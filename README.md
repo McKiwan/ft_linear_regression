@@ -9,8 +9,8 @@
 <!-- Images -->
 <div align="center">
   <a>
-    <img src="images/Linear Regression before training.png" alt="Before Training" style="width: 500px"/>
-    <img src="images/Linear Regression after training.png" alt="After Training" style="width: 500px"/>
+    <img src="images/Linear Regression before training.png" alt="Before Training" style="width: 375px"/>
+    <img src="images/Linear Regression after training.png" alt="After Training" style="width: 375px"/>
   </a>
 </div>
 
