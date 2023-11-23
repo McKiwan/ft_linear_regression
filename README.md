@@ -1,10 +1,12 @@
 <!-- Back to top link -->
 <a name="readme-top"></a>
 
-<p align="center">
-  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Language-Python-blue?style=for-the-badge&logo=python&logoColor=white" /></a>
-  <a href="https://github.com/McKiwan/ft_linear_regression/commits/main"><img src="https://img.shields.io/github/last-commit/McKiwan/ft_linear_regression?style=for-the-badge&logo=github" /></a>
-</p>
+<div align="center">
+  
+  ![Static Badge](https://img.shields.io/badge/Language-Python-blue?style=for-the-badge&logo=python&logoColor=white)
+  ![GitHub last commit (main)](https://img.shields.io/github/last-commit/McKiwan/ft_linear_regression/main?style=for-the-badge&logo=github)
+  
+</div>
 
 <!-- Images -->
 <div align="center">
